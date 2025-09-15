@@ -1,0 +1,1 @@
+CREATE DATABASE trainees_record;
