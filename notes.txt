@@ -28,7 +28,67 @@ trainees_record --> attendance(sno,name,age) --> (1,livin,30),(2,kumar,22)......
                     table3
                     .
                     .
+
+Datatype
+--------
+Numeric:
+1)INT --> whole numbers. -23,23,303,1,2,3,0...
+2)FLOAT --> decimal numbers. 
+3)BIGINT --> very large integer.
+4)DECIMAL(a,b)  ---> a--> length of the number, b---> number of decimal places.Ex: DECIMAL(4,5)--> 22.456
+
+String
+--------
+1)CHAR(n) ---> fixed length char string. Ex: CHAR(5) ---> "hello", "world". (5)
+2)VARCHAR(n) --> var length char string. EX: VARCHAR(5) --> "hello", "world", "Hi" (1-5)
+3)TEXT ---> Large string.
+
+Date and Time 
+-------------
+DATE --> Date as a string (YYYY-MM-DD)
+TIME --> Time as string (HH:MM:SS)
+DATETIME --> both (YYYY-MM-DD HH:MM:SS)
+
+constraint
+------------
+primary key ---> unique and not null. used to identify each row. 
+
+Operators---> conditions ---> filter the rows
+-----------------------------------------------
+=  --> True, if both values are equal
+<>, != --> True, if both are not equal
+< --> a<b True, a is lesser 
+> --> a>b True, a is greater 
+>=  --> a>=b True, a is greater or equal
+<=  --> a<=b True, a is lesser or equal 
                     
 Queries:
 ---------
 to create a new Schema(DB) ---> CREATE DATABASE dbname;
+to select a DB --> USE dbname;
+to create a table ---> CREATE TABLE tbname(
+    col1 Datatype constraint,
+    col2 Datatype constraint,
+    .
+    .
+    .
+    .
+);
+
+To insert data in a table ---> INSERT INTO tbname (col detils) VALUES (d1),(d2),(d3).....;
+To retrive data from a table ---> SELECT (col details (*--> to retrive every col)) FROM tbname;
+To update the existing data --->UPDATE tbname set col1=val1, col2=val2.... (when sql_safe_updates is turned on, you can't update row without filteration. you cannot update more than one row in one go. the condition you are using for filteration should depend on primary.)
+To delete a row from a table --> DELETE FROM tbname;
+
+
+CRUD ---> Create Read Update Delete
+-------------------------------------------
+C---> INSERT
+R---> SELECT
+U---> UPDATE
+D---> DELETE
+
+
+WHERE
+-----
+>> used to filter the rows.
