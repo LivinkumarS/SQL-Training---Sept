@@ -61,7 +61,28 @@ Operators---> conditions ---> filter the rows
 > --> a>b True, a is greater 
 >=  --> a>=b True, a is greater or equal
 <=  --> a<=b True, a is lesser or equal 
-                    
+
+BETWEEN ---> Range filtering 
+>> where col between num1 and num2;
+
+IN operator ---> Checking against multiple values.
+Syntax:
+>> where col in (val1, val2, val3........)
+
+LIKE operator --> Pattern matching
+%--> mathces any sequence of characters(0-infinite)
+_---> mathches exactly one char.
+
+-->'a%'--> 'anand'
+-->'%a'
+-->'_a%'    -->'banana'
+
+>> where col LIKE pattern;
+
+AND --> cond1 and cond2 -->true--> when both are true.
+OR --> cond1 and cond2 -->false--> when both are false.
+NOT ---> not cond1 --> invert the value
+
 Queries:
 ---------
 to create a new Schema(DB) ---> CREATE DATABASE dbname;
@@ -92,3 +113,4 @@ D---> DELETE
 WHERE
 -----
 >> used to filter the rows.
+>> query WHERE condition.
