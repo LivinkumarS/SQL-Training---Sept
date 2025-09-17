@@ -1,5 +1,5 @@
 use trainees_record;
-select * from actor_list;
+select * from actor_list ORDER BY age DESC;
 
 insert into actor_list values 
 (6,'SK',40),(7,'Sudeep',50),(8,"Yash",35),(9,"Risab shetty",39),
@@ -17,7 +17,8 @@ select * from actor_list where actorName like '%_is%';
 select * from actor_list where actorName like 's%' or id>5;
 
 
-select * from actor_list where not actorName like 's%';
+select * from actor_list where  actorName not like 's%' 
+LIMIT 2 offset 2;
 
 
 

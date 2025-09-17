@@ -83,6 +83,21 @@ AND --> cond1 and cond2 -->true--> when both are true.
 OR --> cond1 and cond2 -->false--> when both are false.
 NOT ---> not cond1 --> invert the value
 
+
+LIMIT 
+------ (limiting the number of result)
+LIMIT 10 --> first 10 results will be displayed.
+
+OFFSET (skip the rows)
+-------
+OFFSET 10 --> skips first 10 results
+
+
+SORT (ORDER BY)
+----
+ORDER BY col (ASC or DESC)
+
+
 Queries:
 ---------
 to create a new Schema(DB) ---> CREATE DATABASE dbname;
