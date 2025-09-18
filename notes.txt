@@ -129,3 +129,31 @@ WHERE
 -----
 >> used to filter the rows.
 >> query WHERE condition.
+
+
+
+
+Functions in MySQL:
+--------------------
+>> Predefined operations. that takes input and return output.
+
+Numeric Functions 
+-------------------
+ROUND() ---> Round off a number to closest integer
+CEIL() ---> Round off to the next integer. EX: 10.00001--> 11
+FLOOR() ---> Round off to the previous integer. Ex: 10.9999 ---> 10
+MOD(num1, num2) ---> finds reminder.
+
+String Functions 
+-------------------
+CONCAT(str1,str2,.......) ---> to attach the strings. Ex: concat("Livin","Kumar")--> "LivinKumar"
+LENGTH(str) ---> find length of a string. Ex: LEN("Hell") --> 4
+UPPER()/ LOWER()  --> uppercase, lowercase conversion
+REPLACE(str, oldSubStr, newSubStr) ---> replace a particular sub string from a string.
+
+DATE/TIME Functions
+-------------------
+NOW() --> give us current date and time.
+CURDATE() --> give us current date
+CURTIME() --> give us current time
+DATEDIFF() --> find difference (in days) between two different days.
