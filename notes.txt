@@ -51,7 +51,14 @@ DATETIME --> both (YYYY-MM-DD HH:MM:SS)
 
 constraint
 ------------
+>> rules that applied to a tables column.
 primary key ---> unique and not null. used to identify each row. 
+UNIQUE --> data should be unique,
+NOT NULL --> cannot leave that col empty.
+AUTO_INCREMENT ---> Automatically increases numeric primary keys
+DEFAULT --> adds default value to a col.
+
+FOREIGN KEY -->  Used to relate two tables. this represents primary key of another table.
 
 Operators---> conditions ---> filter the rows
 -----------------------------------------------
