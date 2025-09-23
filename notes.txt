@@ -138,8 +138,6 @@ WHERE
 >> query WHERE condition.
 
 
-
-
 Functions in MySQL:
 --------------------
 >> Predefined operations. that takes input and return output.
@@ -164,3 +162,22 @@ NOW() --> give us current date and time.
 CURDATE() --> give us current date
 CURTIME() --> give us current time
 DATEDIFF() --> find difference (in days) between two different days.
+
+Joins 
+---------
+>> To fetch related information, by combining (joining) two or more tables.
+
+INNER JOIN
+-----------
+It returns only matching rows from both tables.
+Ex: SELECT l.name as actressName ,l.age,l.isMarried, r.rating FROM actress_list l inner join actress_rating r on l.id=r.actressId;
+
+LEFT JOIN 
+---------
+It returns every row from left table and matches the rows from right table.
+Ex: SELECT * FROM actress_list l left join actress_rating r on l.id=r.actressId;
+
+RIGHT JOIN 
+----------
+It returns every row from right table and matches the rows from left table.
+Ex: SELECT * FROM actress_list l right join actress_rating r on l.id=r.actressId;
