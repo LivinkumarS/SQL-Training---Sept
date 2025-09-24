@@ -49,3 +49,11 @@ insert into category (category) values ('men'),('women'),('kids');
 select c.color,s.size,ca.category from color c cross join
  size s cross join category ca;
 
+SELECT CONCAT(
+    'Her name is ', al.name, '. ',
+    'She is ', al.age, ' years old. ',
+    'She has obtained ', ar.rating, ' rating out of 10. ',
+    'Her latest movie is ', lm.movie
+) AS description
+FROM actress_list al INNER JOIN actress_rating ar ON al.id = ar.actressId
+INNER JOIN latest_movie lm ON al.id = lm.actressId;

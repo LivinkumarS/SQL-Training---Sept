@@ -42,6 +42,7 @@ String
 1)CHAR(n) ---> fixed length char string. Ex: CHAR(5) ---> "hello", "world". (5)
 2)VARCHAR(n) --> var length char string. EX: VARCHAR(5) --> "hello", "world", "Hi" (1-5)
 3)TEXT ---> Large string.
+4)ENUM (val1, val2, val3.....) --> gender enum ('male','female')
 
 Date and Time 
 -------------
@@ -131,6 +132,15 @@ R---> SELECT
 U---> UPDATE
 D---> DELETE
 
+Altering a Table 
+-----------------
+To add a new column---> ALTER TABLE tbname ADD COLUMN ColName Datatype constraint...;
+To modify an existing column --> ALTER TABLE tbNAme MODIFY COLUMN colname Datatype constraints...;
+To rename an existing column --> ALTER TABLE tbname RENAME COLUMN oldName to newName;
+To drop a column --> ALTER TABLE tbname DROP COLUMN colName;
+
+To drop a table --> DROP TABLE tbname;
+To drop a DB --> DROP DATABASE dbname;
 
 WHERE
 -----
@@ -181,3 +191,22 @@ RIGHT JOIN
 ----------
 It returns every row from right table and matches the rows from left table.
 Ex: SELECT * FROM actress_list l right join actress_rating r on l.id=r.actressId;
+
+
+Aggregate Functions
+--------------------
+>> built-in functions of mySQL that performs calculations on a set of rows.
+
+COUNT --> used  to find the number of rows.
+SUM --> used to find sum of a col.
+MAX ---> used to find maximum val of that column
+MIN --> used to find minimum val
+AVG ---> used to find average.
+
+Grouping --> GROUP BY 
+-----------------------
+>> Group rows with same values in one are more column to apply aggregate functions.
+aggregate  GROUP BY colName;
+
+to filter the rows --> where condition;
+to filter the groups ---> having condition;
