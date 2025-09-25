@@ -210,3 +210,16 @@ aggregate  GROUP BY colName;
 
 to filter the rows --> where condition;
 to filter the groups ---> having condition;
+
+Subqueries 
+-----------
+>> It is a query inside another query.
+>> The main query (outer) uses result from the subquery (inner)
+>> used to break complex queries into smaller.
+
+>> sub queries will be enclosed with ()
+
+Types
+-----
+single row sub query --> it returns only one value
+multiple rows sub query --> it returns multple rows.
