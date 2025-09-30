@@ -17,4 +17,9 @@ select * from product_details;
 select avg(price) from product_details; 
 
 SELECT * FROM product_details
-WHERE price < (SELECT AVG(price) FROM product_details);
+WHERE price < (SELECT AVG(price) FROM product_details 
+);
+
+select name, price ,(select avg(price) from product_details p2 where p1.category=
+p2.category) from product_details p1 where price=(select max(price) from product_details p2 where p1.category=
+p2.category);

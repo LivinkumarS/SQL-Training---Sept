@@ -223,3 +223,9 @@ Types
 -----
 single row sub query --> it returns only one value
 multiple rows sub query --> it returns multple rows.
+
+Views 
+------
+>> It is a virtual table based on the result of an SQL query.
+
+Ex: CREATE VIEW vName AS query;
